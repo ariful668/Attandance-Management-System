@@ -1,0 +1,41 @@
+﻿@model IEnumerable<StudentManagementSystem.Models.Classes>
+
+@{
+    ViewData["Title"] = "Class Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="app-content">
+    <div class="container">
+        <h2 class="text-center">Class Details</h2>
+        <br /><br />
+        <a class="btn btn-success"  asp-action="Create">Add</a>
+        <br/>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Sl.</th>
+                    <th>Class</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ClassId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ClassName)
+                        </td>
+                        <td>
+                            <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.ClassId">Edit</a>
+                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.ClassId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    </div>

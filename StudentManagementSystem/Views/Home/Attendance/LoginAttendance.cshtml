@@ -1,0 +1,73 @@
+﻿s@{
+    ViewData["Title"] = "Attendance Panel";
+}
+<div class="container">
+    <h2 class="text-center">Attendance Panel</h2>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6">
+            <table>
+                <tr>
+                    <td><label for="usr">TeacherName:</label></td>
+                    <td><input type="text" class="form-control" id="usr"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="usr">Class:</label></td>
+                    <td>
+                        <select class="form-control" id="sel1">
+                            <option>One</option>
+                            <option>Two</option>
+                            <option>Three</option>
+                            <option>Four</option>
+                            <option>Five</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="usr">Section:</label></td>
+                    <td>
+                        <select class="form-control" id="sel1">
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>D</option>
+                            <option>E</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="usr">Password:</label></td>
+                    <td><input type="password" class="form-control" id="usr"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="#">Forget Password?</a></td>
+                </tr>
+            </table>
+            <br />
+            <div class="text-right">
+                <a  class="btn btn-primary" asp-controller="Home" asp-action="Index">Back</a>
+                <a  class="btn btn-success" asp-controller="Home" asp-action="TakeAttendance">Go</a>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Attendance Panel";
+}
+<div class="container">
+    <h2 class="text-center">Absent List</h2>
+    <h6>Teacher Name: Arif</h6>
+    <h6>Class: Three</h6>
+    <h6>Section: B</h6>
+    <h6>Date : 06/12/2018</h6>
+    <br />
+    <center><h2 style="color:red;">Data Saved Successfully</h2></center>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Sl.</th>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>s-16</td>
+                            <td>Asif</td>
+                            <td>
+                                Absent
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>s-18</td>
+                            <td>Asraf</td>
+                            <td>
+                                Absent
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <div class="text-right">
+                    <a class="btn btn-success">Sms</a>
+                    <a class="btn btn-danger" asp-controller="Home" asp-action="LoginAttendance">Log Out</a>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</div>

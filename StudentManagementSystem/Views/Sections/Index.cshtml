@@ -1,0 +1,41 @@
+﻿@model IEnumerable<StudentManagementSystem.Models.Sections>
+
+@{
+    ViewData["Title"] = "Section Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="app-content">
+    <div class="container">
+        <h2 class="text-center">Section Details</h2>
+        <br /><br />
+        <a class="btn btn-success"  asp-action="Create">Add</a>
+        <br/>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Sl.</th>
+                    <th>Section</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SectionId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SectionName)
+                        </td>
+                        <td>
+                            <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.SectionId">Edit</a>
+                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.SectionName">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    </div>

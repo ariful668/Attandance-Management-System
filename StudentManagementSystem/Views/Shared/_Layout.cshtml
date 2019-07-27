@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Demo School</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link href="~/Font-Awesome/web-fonts-with-css/css/fontawesome.css" rel="stylesheet" />
+        <link href="~/Font-Awesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet" />
+        <link href="~/Font-Awesome/web-fonts-with-css/css/regular.css" rel="stylesheet" />
+        <link href="~/Font-Awesome/web-fonts-with-css/css/solid.css" rel="stylesheet" />
+        <link href="~/Font-Awesome/web-fonts-with-css/css/v4-shims.css" rel="stylesheet" />
+        <link href="~/DataDictionsry/css/common/common.css" rel="stylesheet" />
+        <link href="~/DataDictionsry/css/Home/Home.css" rel="stylesheet" />
+        <!--Login Page CSS-->
+        <link href="~/DataDictionsry/css/Login/Login.css" rel="stylesheet" />
+        <!--Login Page CSS-->
+        <!--Registration Page CSS-->
+        <!--Gallery Page CSS-->
+        <link href="~/DataDictionsry/css/Gallery/Gallery.css" rel="stylesheet" />
+        <!--Gallery Page CSS-->
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+              integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
+              crossorigin="anonymous">
+
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <!--Topbar star-->
+    @*<div class="container-fluid  fixed-top mynav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 top_info">
+                        <a href="mailto:info@ouredu.co">
+                            <i class="far fa-envelope mr-1"></i>
+                            Email: info@democollege.edu
+                        </a>
+                    </div>
+                    <div class="col-lg-6 text-right top_info">
+                        <a href="#">
+                            <i class="fas fa-phone-volume mr-1"></i>
+                            Contact us: +88 01773611681
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+    <!--Topbar Finish-->
+    <!--Logo bar star-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-sm-12 ">
+                <div class="logo">
+                    <a asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="~/DataDictionsry/images/common/logo.png" class="img-responsive" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-7 col-sm-12">
+                <div class="eduname">
+                    <h1>
+                        <a asp-area="" asp-controller="Home" asp-action="Index" class="text-dark">
+                            Demo School
+                        </a>
+                    </h1>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 text-right">
+                <div class="button my-4">
+                    <a class="btn btn-outline-danger" asp-area="" asp-controller="Home" asp-action="LoginPage">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Logo bar Finish-->
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Notice">Notice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Event">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="body-content container-fluid ">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="container-fluid p-sm-5 py-5">
+            <div class="row footer-gap">
+                <div class="col-lg-3 col-sm-6">
+                    <h3 class="text-uppercase mb-3">Address</h3>
+                    <address class="mb-0">
+                        <p class="mb-3"><i class="fas fa-map-marker"></i> Sector-10, Uttara Model Town,Dhaka-1230.</p>
+                        <p><i class="fas fa-phone"></i> +88 01773611681</p>
+                        <p><i class="fas fa-envelope-open"></i> <a href="mailto:info@example.com" style="text-decoration:none;">info@democollege.edu</a></p>
+                        <p><i class="fas fa-fax"></i> +51 0000 000 </p>
+                    </address>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-lg-0 mt-sm-0 mt-4 p-md-0">
+                    <h3 class="text-uppercase mb-3">Categories</h3>
+                    <div class="links">
+                        <a class="text-capitalize" href="#"> About Us</a>
+                        <a class="pt-2 text-capitalize" href="#"> Notice</a>
+                        <a class="pt-2 text-capitalize" href="#"> Event</a>
+                        <a class="pt-2 text-capitalize" href="#"> Gallery</a>
+                        <a class="pt-2 text-capitalize" href="#"> Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 mt-lg-0 mt-sm-5 mt-4 p-md-0">
+                    <h3 class="text-uppercase mb-3">Useful Links</h3>
+                    <div class="links">
+                        <a class="pt-2 text-capitalize" href="#"><i class="fas fa-angle-double-right"></i> Ministry of Education</a>
+                        <a class="pt-2 text-capitalize" href="#"><i class="fas fa-angle-double-right"></i> Bangladesh Computer Council (BCC)</a>
+                        <a class="pt-2 text-capitalize" href="#"><i class="fas fa-angle-double-right"></i> E-Service List : Education</a>
+                        <a class="pt-2 text-capitalize" href="#"><i class="fas fa-angle-double-right"></i> Bangladesh National Portal</a>
+                        <a class="pt-2 text-capitalize" href="#"><i class="fas fa-angle-double-right"></i> Bangladesh Research and Education Network</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+                    <h3 class="text-uppercase mb-3 ml-4"> Follow us</h3>
+                    <p class="mb-4 ml-4">Follow us on social media</p>
+                    <ul class="social mt-lg-0 mt-3">
+                        <li class="mr-2"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                        <li class="mr-2"><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li class="mr-2"><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                        <li class="mr-2"><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <p class="pb-4">© 2018 . All Rights Reserved  @*Design by <a href="https://www.facebook.com/codersfamily.cf" target="_blank">Coders Family</a>*@</p>
+        </div>
+    </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/DataDictionsry/js/Registration/datepicker.min.js"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

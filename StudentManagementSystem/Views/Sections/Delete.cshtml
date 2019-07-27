@@ -1,0 +1,41 @@
+﻿@model StudentManagementSystem.Models.Teachers
+
+@{
+    ViewData["Title"] = "Delete Teacher";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="app-content">
+    <div class="container">
+        <h2 class="text-center">Teacher Details</h2>
+        <h5>Are you sure you want to delete this?</h5>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TeacherId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TeacherName)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => model.TeacherId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.TeacherName)
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="TeacherId" />
+                <input type="submit" value="Delete" class="btn btn-danger" /> 
+                <a class="btn btn-info" asp-action="Index">Back to List</a>
+            </form>
+
+    </div>
+</div>

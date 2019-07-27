@@ -1,0 +1,53 @@
+﻿a{
+    text-decoration:none !important;
+}
+/*.mynav {
+    background-color: #563D7C;
+    padding: 7px;
+}
+.top_info {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.top_info a {
+     text-decoration: none;
+     color: white;
+}*/
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+.eduname h1 {
+    font-size: 60px;
+}
+.navbar {
+    box-shadow: 2px 2px 5px #3292a6;
+    background: #007D7D;
+    opacity: 0.9;
+}
+
+.navbar .nav-item {
+     font-size: 1.2rem;
+     padding-right: 20px;
+}
+
+    .navbar .nav-item .nav-link {
+        color: #252525;
+        font-weight: bold;
+    }
+
+.navbar .nav-item .nav-link:hover {
+     color: #3292a6;
+}
+
+.navbar .nav-item:last-child {
+     padding-right: 0;
+}
+
+.mydrop a {
+    font-weight: bold;
+}
+
+

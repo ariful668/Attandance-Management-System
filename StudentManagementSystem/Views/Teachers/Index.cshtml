@@ -1,0 +1,57 @@
+﻿@model IEnumerable<StudentManagementSystem.Models.Teachers>
+
+@{
+    ViewData["Title"] = "Teacher Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="app-content">
+    <div class="container">
+        <h2 class="text-center">Teacher Details</h2>
+        <br /><br />
+        <a class="btn btn-success"  asp-action="Create">Add</a>
+        <br/>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Teacher Name</th>
+                    <th>Gender</th>
+                    <th>Date Of Birth</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Phone No:</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TeacherName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TeacherGender)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateOfBirth)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TeacherAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TeacherEmail)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TeacherPhone)
+                    </td>
+                    <td>
+                        <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.TeacherId">Edit</a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.TeacherId">Delete</a>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    </div>

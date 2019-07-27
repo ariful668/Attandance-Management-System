@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "Attendance Panel";
+}
+<div class="container">
+    <h2 class="text-center">Attendance Panel</h2>
+    <h6>Teacher Name: Arif</h6>
+    <h6>Class: Three</h6>
+    <h6>Section: B</h6>
+    <h6>Date : 06/12/2018</h6>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Sl.</th>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>s-16</td>
+                            <td>Asif</td>
+                            <td>
+                                <select class="form-control w-25" id="sel1">
+                                    <option>P</option>
+                                    <option>A</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>s-17</td>
+                            <td>Atif</td>
+                            <td>
+                                <select class="form-control w-25" id="sel1">
+                                    <option>P</option>
+                                    <option>A</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>s-18</td>
+                            <td>Asraf</td>
+                            <td>
+                                <select class="form-control w-25" id="sel1">
+                                    <option>P</option>
+                                    <option>A</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>s-19</td>
+                            <td>Akbar</td>
+                            <td>
+                                <select class="form-control w-25" id="sel1">
+                                    <option>P</option>
+                                    <option>A</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>05</td>
+                            <td>s-20</td>
+                            <td>Rifat</td>
+                            <td>
+                                <select class="form-control w-25" id="sel1">
+                                    <option>P</option>
+                                    <option>A</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>06</td>
+                            <td>s-21</td>
+                            <td>Kabir</td>
+                            <td>
+                                <select class="form-control w-25" id="sel1">
+                                    <option>P</option>
+                                    <option>A</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>07</td>
+                            <td>s-22</td>
+                            <td>Jamil</td>
+                            <td>
+                                <select class="form-control w-25" id="sel1">
+                                    <option>P</option>
+                                    <option>A</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>08</td>
+                            <td>s-23</td>
+                            <td>Himi</td>
+                            <td>
+                                <select class="form-control w-25" id="sel1">
+                                    <option>P</option>
+                                    <option>A</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09</td>
+                            <td>s-24</td>
+                            <td>Himu</td>
+                            <td>
+                                <select class="form-control w-25" id="sel1">
+                                    <option>P</option>
+                                    <option>A</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>s-25</td>
+                            <td>Era</td>
+                            <td>
+                                <select class="form-control w-25" id="sel1">
+                                    <option>P</option>
+                                    <option>A</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-right">
+                    <a class="btn btn-danger" asp-controller="Home" asp-action="LoginAttendance">Cancel</a>
+                    <a class="btn btn-success" asp-controller="Home" asp-action="AttendanceStatus">Submit</a>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</div>

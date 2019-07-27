@@ -1,0 +1,81 @@
+﻿@model StudentManagementSystem.Models.Students
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="app-content">
+    <div class="container">
+        <h2 class="text-center">Create Student</h2>
+        <br /><br />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="StudentId" class="control-label"></label>
+                        <input asp-for="StudentId" class="form-control" />
+                        <span asp-validation-for="StudentId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="StudentName" class="control-label"></label>
+                        <input asp-for="StudentName" class="form-control" />
+                        <span asp-validation-for="StudentName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="StudentGender" class="control-label"></label>
+                        <input asp-for="StudentGender" class="form-control" />
+                        <span asp-validation-for="StudentGender" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="StudentAddress" class="control-label"></label>
+                        <input asp-for="StudentAddress" class="form-control" />
+                        <span asp-validation-for="StudentAddress" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FatherName" class="control-label"></label>
+                        <input asp-for="FatherName" class="form-control" />
+                        <span asp-validation-for="FatherName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FatherPhone" class="control-label"></label>
+                        <input asp-for="FatherPhone" class="form-control" />
+                        <span asp-validation-for="FatherPhone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MotherName" class="control-label"></label>
+                        <input asp-for="MotherName" class="form-control" />
+                        <span asp-validation-for="MotherName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MotherPhone" class="control-label"></label>
+                        <input asp-for="MotherPhone" class="form-control" />
+                        <span asp-validation-for="MotherPhone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" type="email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DateOfBirth" class="control-label"></label>
+                        <input asp-for="DateOfBirth" type="date" class="form-control" />
+                        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }

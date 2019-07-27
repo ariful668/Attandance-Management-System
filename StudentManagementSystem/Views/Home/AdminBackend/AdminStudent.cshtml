@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Student's Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="app-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="text-center">Student's Details</h2>
+            </div>
+            <div class="col-6">
+                <div class="form-inline">
+                    <input type="text" class="form-control" id="search">
+                    <button type="button" class="btn btn-success">Search</button>
+                </div>
+            </div>
+        </div>
+        <br />
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Sl.</th>
+                    <th>Photo</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Section</th>
+                    <th>Roll No.</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>
+                        <img src="~/DataDictionsry/Backend/images/AdminTeacher/blank.png" width="150" height="150" />
+                    </td>
+                    <td>Ashik</td>
+                    <td>One</td>
+                    <td>A</td>
+                    <td>10</td>
+                    <td class="text-center">
+                        <button type="button" class="btn btn-info">View</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>
+                        <img src="~/DataDictionsry/Backend/images/AdminTeacher/blank.png" width="150" height="150" />
+                    </td>
+                    <td>Arafat</td>
+                    <td>One</td>
+                    <td>A</td>
+                    <td>11</td>
+                    <td class="text-center">
+                        <button type="button" class="btn btn-info">View</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>
+                        <img src="~/DataDictionsry/Backend/images/AdminTeacher/blank.png" width="150" height="150" />
+                    </td>
+                    <td>Asif</td>
+                    <td>One</td>
+                    <td>A</td>
+                    <td>12</td>
+                    <td class="text-center">
+                        <button type="button" class="btn btn-info">View</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

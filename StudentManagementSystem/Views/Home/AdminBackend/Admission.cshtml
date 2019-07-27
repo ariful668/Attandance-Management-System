@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "Add Student";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="app-content">
+    <div class="container">
+        <!-- Sign up form -->
+        <form>
+            <!-- Sign up card -->
+            <div class="card person-card">
+                <div class="card-body">
+                    <!-- Sex image -->
+                    <img id="img_sex" class="person-img"
+                         src="~/DataDictionsry/images/Registration/Registration.svg">
+                    <h2 id="who_message" class="card-title">Who are you ?</h2>
+                    <!-- First row (on medium screen) -->
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input id="first_name" type="text" class="form-control" placeholder="First name">
+                            <div id="first_name_feedback" class="invalid-feedback">
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input id="last_name" type="text" class="form-control" placeholder="Last name">
+                            <div id="last_name_feedback" class="invalid-feedback">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Personal Information</h3>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Enter Id</label>
+                                <input type="email" class="form-control" id="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Gender</label>
+                                <select id="input_sex" class="form-control">
+                                    <option value="Ms.">Male</option>
+                                    <option value="Ms.">Female</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Blood Group</label>
+                                <select id="input_sex" class="form-control">
+                                    <option value="Ms.">A+</option>
+                                    <option value="Ms.">A-</option>
+                                    <option value="Ms.">B+</option>
+                                    <option value="Ms.">B-</option>
+                                    <option value="Ms.">O+</option>
+                                    <option value="Ms.">O-</option>
+                                    <option value="Ms.">AB+</option>
+                                    <option value="Ms.">AB-</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Religion</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Phone Number</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Date Of Birth</label>
+                                <input type="date" class="form-control" id="datepicker" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="col-form-label">Address</label>
+                                <textarea type="text" class="form-control" id="tel" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Class</label>
+                                <select id="input_sex" class="form-control">
+                                    <option>One</option>
+                                    <option>Two</option>
+                                    <option>Three</option>
+                                    <option>Four</option>
+                                    <option>Five</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Gaurdians Information</h3>
+                            <div class="form-group">
+                                <label for="text" class="col-form-label">Father Name</label>
+                                <input type="text" class="form-control" id="fname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="text" class="col-form-label">Father's Occupation</label>
+                                <input type="text" class="form-control" id="foccupation" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="text" class="col-form-label">Mother Name</label>
+                                <input type="text" class="form-control" id="mname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="text" class="col-form-label">Mother's Occupation</label>
+                                <input type="text" class="form-control" id="moccupation" required>
+                            </div>
+                            <h3 class="card-title">Securize your account !</h3>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-form-label">Pasword</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password_conf" class="col-form-label">Re-Type Password</label>
+                                <input type="password" class="form-control" id="password_conf" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 3em;" class="text-right">
+                <button type="button" class="btn btn-outline-info btn-lg mr-4 ">Back</button>
+                <button type="button" class="btn btn-outline-danger btn-lg mr-5 ">Reset</button>
+                <button type="button" class="btn btn-outline-success btn-lg ">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+

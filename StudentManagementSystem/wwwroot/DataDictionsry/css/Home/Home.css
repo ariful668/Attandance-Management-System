@@ -1,0 +1,170 @@
+﻿/* heading title */
+
+h3.title {
+    font-size: 46px;
+    position: relative;
+}
+h3.title:before,
+h3.title:after {
+        position: absolute;
+        background: #42a5f5;
+        width: 10%;
+        height: 2px;
+        content: " ";
+        bottom: -3%;
+}
+
+h3.title:before {
+        left: 43%;
+}
+
+h3.title:after {
+        bottom: -20%;
+        right: 43%;
+}
+/* //heading title */
+
+/* Event section */
+.events-up h5 {
+    font-size: 23px;
+}
+
+    .events-up h5 span {
+        display: block;
+    }
+
+.events-up {
+    background: #46a7f5;
+}
+
+.events-right ul li i {
+    color: #46a7f5;
+}
+
+.events-right ul li {
+    font-size: 15px;
+}
+/* //Event section */
+
+/*-- footer --*/
+footer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #ccc;
+}
+
+footer {
+    background: #222;
+}
+
+    footer p {
+        font-size: 15px;
+        color: #777;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }
+
+    footer .posts p.middle {
+        border-top: 1px dotted #fff;
+        border-bottom: 1px dotted #fff;
+    }
+
+    footer p span {
+        display: block;
+        font-size: 15px;
+    }
+
+.links a {
+    display: block;
+    color: #777;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.links i.fas {
+    margin-right: 2px;
+}
+
+.links a:hover {
+    color: #aaa;
+}
+
+.footer-gap {
+    padding: 0 4em;
+}
+
+
+address p {
+    font-size: 15px;
+    color: #777;
+}
+
+    address p i {
+        color: #999;
+        margin-right: 2px;
+    }
+
+    address p a {
+        color: #777;
+    }
+
+        address p a:hover {
+            color: #aaa;
+        }
+
+.divider {
+    height: 0;
+    margin: 1.5rem 0 1rem;
+    overflow: hidden;
+    border-top: 1px solid #666;
+    width: 70%;
+}
+
+.social-divider {
+    height: 0;
+    margin: 1rem 0;
+    overflow: hidden;
+    border-top: 1px solid #666;
+    width: 85%;
+}
+
+.copyright p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #666;
+}
+
+    .copyright p a {
+        color: #aaa;
+    }
+
+        .copyright p a:hover {
+            color: #999;
+        }
+
+.copyright {
+    background: #222;
+}
+
+.social li {
+    display: inline-block;
+}
+
+    .social li a {
+        color: #777;
+        font-size: 13px;
+        background: #333;
+        width: 37px;
+        height: 37px;
+        line-height: 37px;
+        text-align: center;
+        display: block;
+        border-radius: 50%;
+    }
+
+        .social li a:hover {
+            background: #eee;
+        }
+
+/*-- footer --*/

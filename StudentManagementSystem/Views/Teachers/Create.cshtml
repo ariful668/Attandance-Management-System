@@ -1,0 +1,61 @@
+﻿@model StudentManagementSystem.Models.Teachers
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="app-content">
+    <div class="container">
+        <h2 class="text-center">Create Teacher</h2>
+        <br /><br />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="TeacherId" class="control-label"></label>
+                        <input asp-for="TeacherId" type="number" class="form-control" />
+                        <span asp-validation-for="TeacherId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TeacherName" class="control-label"></label>
+                        <input asp-for="TeacherName" class="form-control" />
+                        <span asp-validation-for="TeacherName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TeacherGender" class="control-label"></label>
+                        <input asp-for="TeacherGender" class="form-control" />
+                        <span asp-validation-for="TeacherGender" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DateOfBirth" class="control-label"></label>
+                        <input asp-for="DateOfBirth" class="form-control" />
+                        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TeacherAddress" class="control-label"></label>
+                        <input asp-for="TeacherAddress" class="form-control" />
+                        <span asp-validation-for="TeacherAddress" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TeacherEmail" class="control-label"></label>
+                        <input asp-for="TeacherEmail" class="form-control" />
+                        <span asp-validation-for="TeacherEmail" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TeacherPhone" class="control-label"></label>
+                        <input asp-for="TeacherPhone" class="form-control" />
+                        <span asp-validation-for="TeacherPhone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+

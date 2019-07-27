@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container">
+    <div class="card m-auto bg-info text-white" style="width:50%;">
+        <div class="card-header text-center bg-danger">Log In For</div>
+        <div class="card-body p-5 m-5">
+            <a class="btn btn-danger btn-block m-2 p-2" asp-area="" asp-controller="Users" asp-action="Login">Log In as User</a>
+            <a class="btn btn-danger btn-block m-2 p-2" asp-area="" asp-controller="Home" asp-action="LoginAttendance">Log In For Attendance</a>
+        </div>
+    </div>
+</div>

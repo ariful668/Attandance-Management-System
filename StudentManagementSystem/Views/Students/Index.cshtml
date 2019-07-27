@@ -1,0 +1,88 @@
+﻿@model IEnumerable<StudentManagementSystem.Models.Students>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="app-content">
+    <div class="container">
+        <h2 class="text-center">Student Details</h2>
+        <br /><br />
+        <a class="btn btn-success" asp-action="Create">Add</a>
+        <br />
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        Student Name
+                    </th>
+                    <th>
+                        Student Gender
+                    </th>
+
+                    <th>
+                        Student Address
+                    </th>
+                    <th>
+                        Fathers Name
+                    </th>
+                    <th>
+                        Fathers Phone
+                    </th>
+                    <th>
+                        Mothers Name
+                    </th>
+                    <th>
+                        Mothers Phone
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Date Of Birth
+                    </th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.StudentName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.StudentGender)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.StudentAddress)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FatherName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FatherPhone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MotherName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MotherPhone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateOfBirth)
+                        </td>
+                        <td>
+                            <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.StudentId">Edit</a> 
+                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.StudentId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        </div>
+    </div>

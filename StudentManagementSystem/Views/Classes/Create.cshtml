@@ -1,0 +1,36 @@
+﻿@model StudentManagementSystem.Models.Classes
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="app-content">
+    <div class="container">
+        <h2 class="text-center">Create Class</h2>
+        <br /><br />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="ClassId" class="control-label"></label>
+                        <input asp-for="ClassId" type="number" class="form-control" />
+                        <span asp-validation-for="ClassId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ClassName" class="control-label"></label>
+                        <input asp-for="ClassName" class="form-control" />
+                        <span asp-validation-for="ClassName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+
